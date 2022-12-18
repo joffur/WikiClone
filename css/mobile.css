@@ -1,4 +1,6 @@
-/***** Reinicio de los estilos *****/
+/***********************************/
+/*     Reinicio de los estilos     */
+/***********************************/
 @font-face {
   font-family: "Linux Libertine Versalitas";
   src: url(../assets/fonts/linux_libertine/LinLibertine_aS.ttf);
@@ -28,7 +30,9 @@ hr {
   border: none;
   border-bottom: 1px solid #c8ccd1;
 }
-/***** Estilos del encabezado *****/
+/**********************************/
+/*     Estilos del encabezado     */
+/**********************************/
 .header {
   width: 100vw;
   display: flex;
@@ -251,4 +255,39 @@ hr {
 .lang-wrapper__button:focus {
   border-color: #36c;
   box-shadow: inset 0 0 0 1px #36c;
+}
+/**********************************/
+/*       Estilos del footer       */
+/**********************************/
+footer {
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  padding: 0.96rem 0.64rem 1.28rem;
+}
+/***** Estilos en el sidebar *****/
+.footer-sidebar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footer-sidebar__logo {
+  width: 42px;
+  height: 42px;
+}
+.footer-sidebar__content {
+  margin-top: 10px;
+  line-height: 2rem;
+}
+.footer-sidebar__anchor {
+  outline: 0;
+  color: #36c;
+  text-decoration: none;
+  margin-top: 3px;
+}
+.footer-sidebar__anchor:hover {
+  text-decoration: underline;
 }
