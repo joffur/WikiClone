@@ -11,16 +11,18 @@
 <body>
   <section class="header">
     <div class="header__textlogo">
-      <div class="header__title">
-        <h1>Wikipedia</h1>
-        <p>La enciclopedia libre</p>
+      <div class="header__title-container">
+        <h1 class="header__title">WikipediA</h1>
+        <p class="header__subtitle">La enciclopedia libre</p>
       </div>
       <figure class="header__logo"><img src="./assets/images/wikipedia-logo.png" alt="Logo de Wikipedia"></figure>
     </div>
     <div class="header__search-container">
-      <input class="header__input" type="text" autofocus>
-      <span class="header__lang">ES</span>
-      <span class="header__lang-arrow"></span>
+      <input class="header__input" type="text">
+      <div class="header__lang-container">
+        <span class="header__lang">ES</span>
+        <span class="header__lang-arrow"></span>
+      </div>
       <button class="header__search-button"></button>
     </div>
     <div class="header__central-featured">
@@ -28,9 +30,10 @@
         <a href="#" class="header__card-a">
           <strong class="header__card-title">
             Español
-          </strong>
+          </strong><br>
           <small class="header__card-text">
-            1 823 000+</br>artículos
+            <bdi dir="ltr">1 823 000+</bdi>
+            <span>artículos</span>
           </small>
         </a>
       </div>
@@ -38,9 +41,10 @@
         <a href="#" class="header__card-a">
           <strong class="header__card-title">
             English
-          </strong>
+          </strong><br>
           <small class="header__card-text">
-            6 585 000+</br>articles
+            <bdi dir="ltr">6 585 000+</bdi>
+            <span>articles</span>
           </small>
         </a>
       </div>
@@ -48,9 +52,10 @@
         <a href="#" class="header__card-a">
           <strong class="header__card-title">
             日本語
-          </strong>
+          </strong><br>
           <small class="header__card-text">
-            1 354 000+</br>記事
+            <bdi dir="ltr">1 354 000+</bdi>
+            <span>記事</span>
           </small>
         </a>
       </div>
@@ -58,9 +63,10 @@
         <a href="#" class="header__card-a">
           <strong class="header__card-title">
             Русский
-          </strong>
+          </strong><br>
           <small class="header__card-text">
-            1 875 000+</br>статей
+            <bdi dir="ltr">1 875 000+</bdi>
+            <span>статей</span>
           </small>
         </a>
       </div>
@@ -68,9 +74,10 @@
         <a href="#" class="header__card-a">
           <strong class="header__card-title">
             Français
-          </strong>
+          </strong><br>
           <small class="header__card-text">
-            2 477 000+</br>articles
+            <bdi>2 477 000+</bdi>
+            <span>articles</span>
           </small>
         </a>
       </div>
@@ -78,9 +85,10 @@
         <a href="#" class="header__card-a">
           <strong class="header__card-title">
             Deutsch
-          </strong>
+          </strong><br>
           <small class="header__card-text">
-            2 751 000+</br>Artikel
+            <bdi dir="ltr">2 751 000+</bdi>
+            <span>Artikel</span>
           </small>
         </a>
       </div>
@@ -88,9 +96,10 @@
         <a href="#" class="header__card-a">
           <strong class="header__card-title">
             Italiano
-          </strong>
+          </strong><br>
           <small class="header__card-text">
-            1 785 000+</br>voci
+            <bdi dir="ltr">1 785 000+</bdi>
+            <span>voci</span>
           </small>
         </a>
       </div>
@@ -98,19 +107,21 @@
         <a href="#" class="header__card-a">
           <strong class="header__card-title">
             中文
-          </strong>
+          </strong><br>
           <small class="header__card-text">
-            1 323 000+</br>条目 / 條目
+            <bdi>1 323 000+</bdi>
+            <span>条目 / 條目</span>
           </small>
         </a>
       </div>
-      <div class="header__card" title="Fārsi — ویکی‌پدیا — دانشنامهٔ آزاد">
+      <div class="header__card" title="Fārsi — ویکی‌پدیا — دانشنامهٔ آزاد" dir="rtl">
         <a href="#" class="header__card-a">
           <strong class="header__card-title">
-            فارسی
-          </strong>
+            <bdi dir="rtl">فارسی</bdi>
+          </strong><br>
           <small class="header__card-text">
-            941 000+</br>مقاله
+            <bdi dir="ltr">941 000+</bdi>
+            <span>مقاله</span>
           </small>
         </a>
       </div>
@@ -118,20 +129,23 @@
         <a href="#" class="header__card-a">
           <strong class="header__card-title">
             Português
-          </strong>
+          </strong><br>
           <small class="header__card-text">
-            1 096 000+</br>artigos
+            <bdi dir="ltr">1 096 000+</bdi>
+            <span>artigos</span>
           </small>
         </a>
       </div>
     </div>
-    <div class="header__lang-wrapper">
-      <button class="header__lang-wrapper-button">
-        <span class="header__lang-wrapper-icon"></span>
-        <span class="header__lang-wrapper-text">Leer Wikipedia en tu idioma</span>
-        <span class="header__lang-wrapper-arrow"></span>
-      </button>
-    </div>
   </section>
+  <div class="lang-wrapper">
+    <button class="lang-wrapper__button">
+      <i class="lang-wrapper__icon"></i>
+      <span class="lang-wrapper__text">Leer Wikipedia en tu idioma</span>
+      <span class="lang-wrapper__arrow"></span>
+    </button>
+    <div class="lang-wrapper__border"></div>
+  </div>
+  <hr>
 </body>
 </html>
