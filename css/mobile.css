@@ -435,3 +435,24 @@ footer {
   width: 110px;
   margin-left: 5px;
 }
+/***** Estilos del Site License *****/
+.site-license small {
+  font-size: 1.3rem;
+}
+.site-license {
+  width: 100%;
+  line-height: 20px;
+  text-align: center;
+  margin: 14px 0;
+}
+.site-license a {
+  outline: 0;
+  color: #36c;
+  text-decoration: none;
+}
+.site-license a:hover {
+  text-decoration: underline;
+}
+.site-license__anchor a::before {
+  content: "\2022";
+}
