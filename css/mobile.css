@@ -34,7 +34,7 @@ hr {
 /*     Estilos del encabezado     */
 /**********************************/
 .header {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -260,11 +260,12 @@ hr {
 /*       Estilos del footer       */
 /**********************************/
 footer {
-  overflow: hidden;
-  max-width: 100%;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 6px;
+  margin-bottom: 50px;
   font-size: 1.3rem;
-  padding: 0.96rem 0.64rem 1.28rem;
+
 }
 /***** Estilos en el sidebar *****/
 .footer-sidebar {
@@ -273,6 +274,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 15px 0 0 0;
 }
 .footer-sidebar__logo {
   width: 42px;
@@ -290,4 +292,146 @@ footer {
 }
 .footer-sidebar__anchor:hover {
   text-decoration: underline;
+}
+.footer-other-projects {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin-top: 30px;
+}
+/***** Estilos en otros proyectos *****/
+.footer-other-projects__card-container {
+  width: 50%;
+  height: 9rem;
+}
+.footer-other-projects__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  padding: 1rem;
+  white-space: nowrap;
+  color: #36c;
+}
+.footer-other-projects__icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  margin: 5px 5px 0 0;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.footer-other-projects__content {
+  vertical-align: middle;
+  white-space: normal;
+  display: inline-block;
+  width: 65%;
+}
+.footer-other-projects__title {
+  display: block;
+}
+.foother-other-projects__text {
+  hyphens: auto;
+  color: #54595d;
+}
+.commons {
+  background-image: url("../assets/images/Commons-logo.svg");
+}
+.wikiviajes {
+  background-image: url("../assets/images/Wikiviajes-logo.png");
+}
+.wikcionario {
+  background-image: url("../assets/images/Wikcionary-logo.png");
+}
+.wikilibros {
+  background-image: url("../assets/images/Wikilibros-logo.png");
+}
+.wikinoticias {
+  background-image: url("../assets/images/Wikinoticias-logo.png");
+}
+.wikidata {
+  background-image: url("../assets/images/Wikidata-logo.png");
+}
+.wikiversidad {
+  background-image: url("../assets/images/Wikiversity-logo.png");
+}
+.wikiquote {
+  background-image: url("../assets/images/Wikiquote-logo.png");
+}
+.mediawiki {
+  background-image: url("../assets/images/MediaWiki-logo.png");
+}
+.wikisource {
+  background-image: url("../assets/images/Wikisource-logo.png");
+}
+.wikispecies {
+  background-image: url("../assets/images/Wikispecies-logo.png");
+}
+.meta-wiki {
+  background-image: url("../assets/images/Meta-Wiki-logo.png");
+}
+.footer-other-projects__link:hover {
+  background-color: #eaecf0;
+}
+.footer-other-projects__link:focus {
+  outline: 1px solid #36c;
+}
+/***** Estilos en App-badges *****/
+.footer-app-badges {
+  width: 100%;
+  text-align: center;
+  background-color: #f8f9fa;
+  padding-top: 15px;
+  margin-top: 8px;
+}
+.footer-app-badges__header {
+  font-weight: 700;
+  text-align: center;
+  color: #54595d;
+}
+.footer-app-badges__logo {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/images/wikipedia-ico.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.footer-app-badges__title {
+  line-height: 20px;
+  padding-left: 20px;
+}
+.footer-app-badges__text {
+  margin: 13px 0;
+}
+.footer-app-badges__icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.footer-app-badges__icon {
+  display: inline-block;
+  height: 38px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.android {
+  background-image: url("../assets/images/google-app-icon.png");
+  width: 124px;
+}
+.ios {
+  background-image: url("../assets/images/apple-app-icon.png");
+  width: 110px;
+  margin-left: 5px;
 }
