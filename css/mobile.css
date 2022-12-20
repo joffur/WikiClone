@@ -275,6 +275,7 @@ footer {
   align-items: center;
   text-align: center;
   padding: 15px 0 0 0;
+  color: #54595d;
 }
 .footer-sidebar__logo {
   width: 42px;
@@ -284,7 +285,7 @@ footer {
   margin-top: 10px;
   line-height: 2rem;
 }
-.footer-sidebar__anchor {
+.footer-sidebar__anchor a {
   outline: 0;
   color: #36c;
   text-decoration: none;
@@ -334,6 +335,7 @@ footer {
 }
 .footer-other-projects__title {
   display: block;
+  font-size: 1.4rem;
 }
 .foother-other-projects__text {
   hyphens: auto;
@@ -389,10 +391,12 @@ footer {
   padding-top: 15px;
   margin-top: 8px;
 }
+.footer-app-badges__content {
+  color: #54595d;
+}
 .footer-app-badges__header {
   font-weight: 700;
   text-align: center;
-  color: #54595d;
 }
 .footer-app-badges__logo {
   display: inline-block;
@@ -413,6 +417,7 @@ footer {
 }
 .footer-app-badges__icons {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   margin-bottom: 10px;
@@ -433,7 +438,6 @@ footer {
 .ios {
   background-image: url("../assets/images/apple-app-icon.png");
   width: 110px;
-  margin-left: 5px;
 }
 /***** Estilos del Site License *****/
 .site-license small {
